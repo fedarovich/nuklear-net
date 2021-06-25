@@ -9,3 +9,6 @@ project ("Nuklear")
 add_library (Nuklear SHARED "Nuklear.cpp")
 
 # TODO: Add tests and install targets if needed.
+
+target_compile_definitions (Nuklear PRIVATE NK_IMPLEMENTATION NUKLEAR_EXPORTS)
+target_include_directories (Nuklear PRIVATE src)
